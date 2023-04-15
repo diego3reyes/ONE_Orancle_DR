@@ -41,7 +41,7 @@ body {
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
-    display: block;
+
 }
 
 #munheco {
@@ -52,27 +52,27 @@ body {
 
 .cuadro-muneco {
     margin: 0 auto;
-    padding: 50% 10px; 
+    padding: 50% 10px;
 }
 
-.item p{
+.item p {
     text-align: center;
     padding: 0 0 0.5em;
 }
 
-.item img+p{
+.item img+p {
     font-size: 24px;
     font-weight: bold;
     color: #343A40;
     line-height: 150%;
 }
 
-.item p+p{
+.item p+p {
     font-size: 16px;
     line-height: 150%;
 }
 
-.mensaje-cod{
+.mensaje-cod {
     position: absolute;
     width: 25%;
     height: 90%;
@@ -83,7 +83,32 @@ body {
     border-radius: 32px;
     display: none;
 }
-.posicion-botones{
+
+#mensaje-modificado {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    margin: 20px 5% 0;
+    font-size: 24px;
+    color: #495057;
+    line-height: 150%;
+}
+
+#copiar-boton {
+    position: absolute;
+    top: 88%;
+    width: 80%;
+    height: 60px;
+    margin: 0 10%;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    background: white;
+    font-size: 16px;
+    color: #0A3871;
+}
+
+
+.posicion-botones {
     position: absolute;
     left: 15%;
     top: 80%;
@@ -91,27 +116,36 @@ body {
     width: 50%;
 }
 
-.legenda{
+.legenda {
     color: gray;
     font-size: 12px;
     padding: 0 0 1.5em;
 }
 
-.encriptar-boton, .desencriptar-boton{
+.encriptar-boton,
+.desencriptar-boton {
     width: 40%;
     height: 60px;
-    border-radius: 25px;
+    border-radius: 24px;
     font-size: 16px;
     font-family: 'Inter';
     font-weight: 400;
     margin: 0 30px 0 0;
 }
-.encriptar-boton{
+
+.encriptar-boton {
     background: darkblue;
     color: white;
 }
-.desencriptar-boton{
+
+.desencriptar-boton {
     background: #D8DFE8;
     color: #0A3871;
     border: 1px solid #0A3871
+}
+
+footer {
+    position: absolute;
+    top: 95%;
+    margin: 0 30%;
 }
