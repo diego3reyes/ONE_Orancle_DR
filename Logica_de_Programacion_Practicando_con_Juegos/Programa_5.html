@@ -1,0 +1,64 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+
+    let pantalla = document.querySelector("canvas");
+    let pincel = pantalla.getContext("2d");
+    pincel.fillStyle = "lightgrey";
+    pincel.fillRect(0, 0, 600, 400);
+    let posX;
+    let posY;
+    let radio = 10;
+
+    function disenarCircuferencia(x, y, radio, color) {
+
+        pincel.fillStyle = color;
+        pincel.beginPath();
+        pincel.arc(x, y, radio, 0, 2 * Math.PI);
+        pincel.fill();
+    }
+
+    function limpiarPantalla() {
+        pincel.clearRect(0, 0, 600, 400);
+    }
+
+    function actualizarPantalla() {
+
+        posX = sortearPos(600);
+        posY = sortearPos(400);
+        limpiarPantalla();
+        Objetivo(posX, posY);
+
+    }
+
+    function Objetivo(x, y) {
+
+        disenarCircuferencia(x, y, radio + 20, "red");
+        disenarCircuferencia(x, y, radio + 10, "white");
+        disenarCircuferencia(x, y, radio, "red");
+
+    }
+
+    function sortearPos(maximo) {
+
+        return Math.floor(Math.random() * maximo);
+
+    }
+
+    function disparar(evento) {
+
+        let x = evento.pageX - pantalla.offsetLeft;
+        let y = evento.pageY - pantalla.offsetTop;
+
+        if ((x < posX + radio) && (x > posX - radio) && (y < posY + radio) && (y > posY - radio)) {
+
+            alert("Tiro certero");
+
+        }
+
+    }
+
+    setInterval(actualizarPantalla, 1000);
+    pantalla.onclick = disparar;
+
+</script>
