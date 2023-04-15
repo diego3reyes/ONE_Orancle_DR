@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Desafio - Alura</title>
+</head>
+
+<body>
+    <header>
+        <h1><img src="imagenes/Logo.png" alt="Logo Alura" class="logo-alura"></h1>
+    </header>
+    <main>
+        <div class="ingreso-texto">
+            <textarea id="cuadro-texto" cols="60" rows="5" placeholder="Ingrese el texto aqui"></textarea>
+        </div>
+        <section class="mensaje">
+            <ul class="cuadro-muneco">
+                <li class="item">
+                    <img src="imagenes/Muñeco.png" alt="Munheco" id="munheco">
+                    <p>Ningun mensaje fue encontrado</p>
+                    <p>Ingresa el texto que deseas encriptar o desencriptar.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="posicion-botones">
+            <ul>
+                <li class="legenda"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                  </svg> Solo letras minusculas y sin acentos</li>
+                <li>
+                    <input type="submit" value="Encriptar" class="encriptar-boton">
+                    <input type="submit" value="Desencriptar" class="desencriptar-boton">
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
