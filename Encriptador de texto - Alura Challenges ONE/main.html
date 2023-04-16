@@ -32,9 +32,9 @@
             </ul>
         </section>
         <!-- cuadro con texto modificado -->
-        <section class="mensaje-cod">
+        <section id="mensaje-cod">
             <p id="mensaje-modificado"></p>
-            <input type="submit" value="Copiar" id="copiar-boton">
+            <button id="copiar-boton" onclick="copy()">Copiar</button>
         </section>
         <section class="posicion-botones">
             <ul>
@@ -44,8 +44,8 @@
                             d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
                     </svg> Solo letras minusculas y sin acentos</li>
                 <li>
-                    <input type="submit" value="Encriptar" class="encriptar-boton">
-                    <input type="submit" value="Desencriptar" class="desencriptar-boton">
+                    <button class="encriptar-boton" onclick="codificador()">Encriptar</button>
+                    <button class="desencriptar-boton" onclick="decodificador()">Desencriptar</button>
                 </li>
             </ul>
         </section>
@@ -53,6 +53,7 @@
     <footer>
         <p> Por Diego Reyes ONE_G5</p>
     </footer>
+    <script src="scrip.js"></script>
 </body>
 
 </html>

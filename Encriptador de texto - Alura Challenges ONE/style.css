@@ -72,7 +72,7 @@ body {
     line-height: 150%;
 }
 
-.mensaje-cod {
+#mensaje-cod {
     position: absolute;
     width: 25%;
     height: 90%;
@@ -106,7 +106,9 @@ body {
     font-size: 16px;
     color: #0A3871;
 }
-
+#copiar-boton:hover{
+    cursor: pointer;
+}
 
 .posicion-botones {
     position: absolute;
@@ -138,10 +140,18 @@ body {
     color: white;
 }
 
+.encriptar-boton:hover {
+    cursor: pointer;
+}
+
 .desencriptar-boton {
     background: #D8DFE8;
     color: #0A3871;
     border: 1px solid #0A3871
+}
+
+.desencriptar-boton:hover {
+    cursor: pointer;
 }
 
 footer {
