@@ -1,0 +1,10 @@
+package Java.Java_polimorfismo;
+
+public class Contador extends Funcionario{
+
+    @Override
+    public double getBonificacion() {
+        return 200;
+    }
+    
+}

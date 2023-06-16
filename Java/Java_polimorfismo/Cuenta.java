@@ -1,27 +1,27 @@
-package Java.Java_OO;
+package Java.Java_polimorfismo;
 
-class Cuenta {
-    private double saldo;
+public abstract class Cuenta {
+    protected double saldo;
     private int agencia;
     private int numero;
     Cliente titular = new Cliente();
     private static int total = 0;
 
-    public Cuenta(int agencia) {
-        if (agencia <= 0) {
+    public Cuenta(int agencia, int numero) {
+        if (agencia <= 0 || numero <= 0) {
             System.out.println("No se permite 0");
             this.agencia = 1;
+            this.numero = 1;
         } else {
             this.agencia = agencia;
+            this.numero = numero;
         }
         total++;
         System.out.println("Se van creando: " + total + " cuentas");
     }
 
     // no retorna respuesta
-    public void depositar(double valor) {
-        this.saldo += valor;
-    }
+    public abstract void depositar(double valor); 
 
     // Retorna repuesta
     public boolean retirar(double valor) {
@@ -34,7 +34,7 @@ class Cuenta {
 
     public boolean transferir(double valor, Cuenta cuenta) {
         if (this.saldo >= valor) {
-            this.saldo -= valor;
+            this.retirar(valor);
             cuenta.depositar(valor);
             return true;
         }
@@ -69,7 +69,7 @@ class Cuenta {
         return titular;
     }
 
-    public static int getTotal(){
+    public static int getTotal() {
         return Cuenta.total;
     }
 }
