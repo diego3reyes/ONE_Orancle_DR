@@ -1,0 +1,9 @@
+import javax.swing.JOptionPane;
+
+
+public class Ventana {
+public static void main(String[] args) {
+	JOptionPane.showInternalMessageDialog(frame, "information",
+            "information", JOptionPane.INFORMATION_MESSAGE);
+}
+}

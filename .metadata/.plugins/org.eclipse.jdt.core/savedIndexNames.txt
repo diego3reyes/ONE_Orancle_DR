@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\Diego Reyes\Documents\GitHub\ONE_Orancle_DR\.metadata\.plugins\org.eclipse.jdt.core
+1696264553.index
+1865797976.index
+2154606591.index

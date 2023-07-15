@@ -1,0 +1,30 @@
+import javax.swing.JOptionPane;
+
+
+public class Ventana {
+public static void main(String[] args) {
+	/* Declaramos una variable tipo String
+     * para almacenar el nombre y otra para la edad
+     * Además declaramos una variable de tipo int
+     * para poder almacenar la edad que el usuario
+     * introduce en una variable de tipo numérico.*/
+    String nombre, edad;
+    int edadReal;
+     
+    /* Contruimos el cuandro de diálogo para el nombre*/
+    nombre=JOptionPane.showInputDialog("Introduce tu nombre");
+     
+    /* Contruimos el cuandro de diálogo para la edad*/
+    edad=JOptionPane.showInputDialog("Introduce tu edad");
+     
+    /* Almacenamos lo que tenemos en edad y que es de tipo String
+     * en la variable edadReal, que es de tipo int, haciendo una
+     * conversión de String a int*/
+    edadReal=Integer.parseInt(edad);
+     
+    /* Mostramos la información por consola, pero en lugar de usar
+     * la variable edad, usaremos la variable edadReal*/
+    System.out.println("Tu nombre es " + nombre 
+            + " y el año que viene tendrás " + (edadReal+1) + " años.");
+}
+}
